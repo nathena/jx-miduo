@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+* {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.body {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 52.08vw;
+    height: 29.69vw;
+}
+
+/* 页面载入时登陆注册框动画 Start */
+.box-animate {
+    -webkit-animation: flipInX 1s .2s ease both;
+       -moz-animation: flipInX 1s .2s ease both;
+            animation: flipInX 1s .2s ease both;
+}
+
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% { -webkit-transform: perspective(400px) rotateX(-10deg); }
+    70% { -webkit-transform: perspective(400px) rotateX(10deg); }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@-moz-keyframes flipInX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% { -moz-transform: perspective(400px) rotateX(-10deg); }
+    70% { -moz-transform: perspective(400px) rotateX(10deg); }
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% { transform: perspective(400px) rotateX(-10deg); }
+    70% { transform: perspective(400px) rotateX(10deg); }
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+/* 页面载入时登陆注册框动画 End */
+
+
+/* 网站logo及名称引言 Start */
+.logo {
+    position: absolute;
+    margin: auto;
+    left: 20vw;
+    right: 0;
+    width: 16.45vw;
+    height: 6.5625vw;
+    font-size: 3vw;
+    color: #FFF;
+    opacity: 0;
+    -webkit-transition-property: left, opacity;
+       -moz-transition-property: left, opacity;
+         -o-transition-property: left, opacity;
+            transition-property: left, opacity;
+}
+.logo * {
+    cursor: default;
+}
+.logo > div {
+    width: 100%;
+    height: 5vw;
+}
+.logo > div > i {
+    display: block;
+    float: left;
+    margin-right: .2vw;
+    line-height: 5vw;
+}
+.logo > div > i:first-child {
+    margin-right: 1vw;
+    line-height: 5vw;
+    font-size: 5vw;
+}
+.logo > p {
+    width: 100%;
+    height: 1.5vw;
+    text-align: center;
+    font-size: 1.25vw;
+    white-space: nowrap;
+}
+/* 网站logo及名称引言 End */
+
+/* 注册登录 Start */
+.box {
+    width: 37.5vw;
+    height: 18.75vw;
+    margin: 10.9375vw auto 0;
+    opacity: 0;
+}
+.box .tabs {
+    position: relative;
+    width: 100%;
+    height: 3.33vw;
+    background-color: rgba(0,0,0,.8);
+}
+.box .tabs > span {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 3.33vw;
+    font-size: 1.25vw;
+    color: rgba(255,255,255,.6);
+    cursor: pointer;
+    -webkit-transition: color .5s ease-in;
+       -moz-transition: color .5s ease-in;
+         -o-transition: color .5s ease-in;
+            transition: color .5s ease-in;
+}
+.box .tabs > span.sel {
+    color: #333;
+}
+.box .tabs > span.sel-remove-active {
+    color: rgba(255,255,255,.6);
+}
+.box .tabs > font.current {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+    color: #333;
+    pointer-events: none;
+    -webkit-transition-property: left;
+       -moz-transition-property: left;
+         -o-transition-property: left;
+            transition-property: left;
+}
+.box .tabs > span:first-child {
+    float: left;
+}
+.box .tabs > span:nth-child(2) {
+    float: right;
+}
+
+.box .form-box {
+    position: relative;
+    width: 100%;
+    height: 15.42vw;
+    background-color: #CCC;
+    overflow: hidden;
+}
+
+.login-reg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2.08vw 3.125vw;
+    background-color: #FFF;
+    -webkit-transition-property: transform;
+       -moz-transition-property: transform;
+         -o-transition-property: transform;
+            transition-property: transform;
+}
+.login-reg > div {
+    float: left;
+    height: 100%;
+}
+.login-box > div {
+    height: 85%;
+}
+.login-box > p {
+    position: absolute;
+    bottom: 3vw;
+    width: 44%;
+    height: 1vw;
+}
+.login-box > p > * {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    line-height: 1vw;
+    color: #666;
+    font-size: .7vw;
+}
+.login-box > p > span {
+    left: 0;
+    cursor: pointer;
+}
+.login-box > p > span > * {
+    display: block;
+    float: left;
+}
+.login-box > p > span > i {
+    width: 1vw;
+    height: 1vw;
+    margin-right: .4vw;
+    line-height: 1vw;
+    text-align: center;
+    border: 1px solid #BBB;
+    font-size: .6vw;
+    color: #FF4A5B;
+}
+.login-box > p > a {
+    right: 0;
+}
+.login-reg .left {
+    width: 53%;
+}
+.login-reg .left > input {
+    width: 100%;
+    height: 2.5vw;
+    padding: 0 1vw;
+    border: 1px solid #DDD;
+    border-top-width: 0;
+    color: #333;
+}
+.login-reg .left > input:first-child {
+    border-top-width: 1px;
+}
+.login-reg .left > button {
+    width: 100%;
+    height: 2.5vw;
+    margin-top: 1vw;
+    font-size: 1.25vw;
+}
+.login-reg .rules {
+    position: relative;
+    width: 13%;
+}
+.login-reg .rules .line,
+.login-reg .rules > span {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    cursor: default;
+}
+.login-reg .rules .line {
+    top: 0;
+    width: 1px;
+    height: 4.95vw;
+    background-color: #DDD;
+}
+.login-reg .rules > span {
+    display: block;
+    top: 1.65vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    line-height: 1.5vw;
+    text-align: center;
+    background-color: #FFF;
+    font-size: .73vw;
+    color: #888;
+}
+.login-reg .right {
+    width: 33%;
+}
+.login-reg .right > a {
+    display: block;
+    width: 100%;
+    height: 2.08vw;
+    line-height: 2.08vw;
+    margin-bottom: .52vw;
+    font-size: .73vw;
+}
+.login-reg .right > a > i {
+    margin-left: 2.08vw;
+    margin-right: .52vw;
+    font-size: 1.15vw;
+}
+
+.login-reg.ng-enter.ng-enter-active {
+    -webkit-transform: rotateY(90deg);
+       -moz-transform: rotateY(90deg);
+        -ms-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+}
+.login-reg.ng-leave {
+    z-index: 10;
+}
+.login-reg.ng-leave.ng-leave-active {
+    -webkit-transform: rotateY(-90deg);
+       -moz-transform: rotateY(-90deg);
+        -ms-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+    z-index: 10;
+}
+.auto-tip {
+    border: 1px solid #DDD;
+    background-color: #FFF;
+}
+.auto-tip > li {
+    width: 100%;
+    height: 1.5625vw;
+    line-height: 1.5625vw;
+    padding: 0 1.04vw;
+    font-size: .73vw;
+    color: #555;
+    cursor: default;
+}
+.auto-tip > li:hover,
+.auto-tip > li.hover {
+    background-color: #FFFFCC;
+}
+.hidden {
+	display:none;
+}
+/* 注册登录 End */
+
+/* 创建婚礼弹出层 Start */
+.cover {
+    opacity: 1;
+    background-image: url(../images/cover.png);
+    -webkit-transition-property: opacity;
+       -moz-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
+}
+.cover.ng-enter,
+.cover.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+.cover.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.createWedding {
+    position: fixed;
+    margin: auto;
+    top: calc(50% - 9.375vw);
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 26.04vw;
+    height: 18.75vw;
+    padding: 2.86vw 2.08vw;
+    background-color: #FFF;
+    opacity: 1;
+    -webkit-transition-property: top, opacity;
+       -moz-transition-property: top, opacity;
+         -o-transition-property: top, opacity;
+            transition-property: top, opacity;
+}
+.createWedding.ng-enter,
+.createWedding.ng-leave.ng-leave-active {
+    top: -18.75vw;
+    opacity: 0;
+}
+.createWedding.ng-enter.ng-enter-active {
+    top: calc(50% - 9.375vw); /* 使用top:0; bottom:0;的方式是不会触发从顶部掉落动画的，所以只能通过改变top的值来实现掉落动画 */
+    opacity: 1;
+}
+
+.createWedding > * {
+    width: 100%;
+    height: 2.5vw;
+}
+.createWedding > input {
+    margin-bottom: 1vw;
+    padding: 0 1.04vw;
+    border: 1px solid #DDD;
+    font-size: .73vw;
+    color: #333;
+}
+.createWedding > button {
+    font-size: 1.25vw;
+}
+/* 创建婚礼弹出层 End */

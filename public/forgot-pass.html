@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh" ng-controller="forgotPassController" ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>多宝娱</title>
+    <link rel="stylesheet" href="static/css/default.css">
+    <link rel="stylesheet" href="static/css/forgot-pass.css">
+    <script src="static/js/jquery/jquery-2.1.3.min.js"></script>
+    <script src="static/js/angular/1.3.0/angular.min.js"></script>
+    <script src="static/js/angular/1.3.0/angular-animate.min.js"></script>
+    <script src="static/js/juxiDBY.js"></script>
+    <script src="static/js/forgot-pass.js"></script>
+</head>
+    
+<body>
+    <!-- 头部Logo Start -->
+    <header class="account-head" onselectstart="return false">
+        <div class="logo">
+            <i class="icon-dbylogo"></i>
+            <i class="icon-dbylogod"></i>
+            <i class="icon-dbylogob"></i>
+            <i class="icon-dbylogoy"></i>
+        </div>
+    </header>
+    <!-- 头部Logo End -->
+    
+    <div class="body">
+        <div class="form-box step1" style="display:none">
+            <p class="title">找回密码</p>
+            <input type="text" placeholder="邮箱" maxlength="22">
+            <input type="text" placeholder="验证码" maxlength="4">
+            <button class="btn-pink">开 始</button>
+        </div>
+        <div class="form-box step2">
+            <p class="title">找回密码</p>
+            <p class="msg">已发送至：<span>1*****126@qq.com</span>的邮箱</p>
+            <button class="btn-lightGreen-white">进入QQ邮箱查看</button>
+            <button class="btn-white-gray">重新发送</button>
+        </div>
+    </div>
+</body>
+</html>

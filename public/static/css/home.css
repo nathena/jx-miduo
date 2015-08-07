@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/* 头部logo及导航 Start */
+header {
+    width: 100%;
+    height: 81px;
+    border-bottom: 1px solid #DEDEDE;
+}
+header .main {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 81px;
+}
+header .main > i {
+    display: block;
+    float: left;
+    font-size: 30px;
+    color: #333;
+}
+header .main > i:first-child {
+    margin-right: 4px;
+    font-size: 50px;
+    color: #FF4B5A;
+}
+header .main > button {
+    float: right;
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 24px;
+    font-size: 16px;
+}
+header .main > span {
+    display: block;
+    float: right;
+    width: 100px;
+    height: 38px;
+    margin-top: 24px;
+    margin-right: 15px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+/* 头部logo及导航 End */
+
+.body {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.body > ul {
+    float: left;
+    width: 680px;
+    height: 600px;
+}
+.body > ul > li {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #DDD;
+}
+.body > ul > li:last-child {
+    border: 0;
+}
+.body > ul > li > * {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+.body > ul > li > i {
+    left: 0;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 120px;
+    font-size: 80px;
+    color: #FFF;
+}
+.body > ul > li > .msg {
+    left: 140px;
+    width: 420px;
+    height: 120px;
+}
+.body > ul > li > .msg > h2 {
+    width: 100%;
+    height: 24px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-size: 24px;
+    color: #333;
+}
+.body > ul > li > .msg > p {
+    width: 100%;
+    height: 76px;
+    font-size: 14px;
+    color: #666;
+}
+.body > ul > li > .checkbox {
+    width: 80px;
+    height: 40px;
+    right: 0;
+    border-radius: 36px;
+    -webkit-transition: background-color .3s ease;
+       -moz-transition: background-color .3s ease;
+         -o-transition: background-color .3s ease;
+            transition: background-color .3s ease;
+}
+.body > ul > li > .checkbox > span {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: #FFF;
+    -webkit-transition: left .3s ease-out;
+       -moz-transition: left .3s ease-out;
+         -o-transition: left .3s ease-out;
+            transition: left .3s ease-out;
+}
+
+.body > .right-box {
+    float: right;
+    width: 280px;
+    height: 610px;
+    margin-top: 40px;
+}
+.body > .right-box > div {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 18px;
+    border: 1px solid #DDD;
+}
+.body > .right-box > .screen {
+    height: 120px;
+}
+.body > .right-box > .date {
+    height: 120px;
+}
+.body > .right-box > .code {
+    height: 240px;
+}
+
+.body > .right-box > div .title {
+    width: 100%;
+    height: 16px;
+    margin-bottom: 20px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #333;
+}
+.body > .right-box > .screen input {
+    float: left;
+    width: 180px;
+    height: 36px;
+    padding-left: 12px;
+    padding-right: 6px;
+    background-color: #EEE;
+    font-size: 14px;
+    color: #666;
+    cursor: text;
+}
+.body > .right-box > .screen > a {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 2;
+    box-shadow: -10px 0 10px 5px rgba(255,255,255,.5);
+}
+.body > .right-box > .date > span {
+    display: block;
+    float: left;
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #EEE;
+    font-size: 16px;
+    color: #333;
+    cursor: default;
+}
+.body > .right-box > .date > span:last-child {
+    float: right;
+}
+.body > .right-box > .code {
+    text-align: center;
+}
+.body > .right-box > .code > img {
+    width: 136px;
+    height: 136px;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-top: 1px solid #E3E3E3;
+    font-size: 12px;
+    color: #B2B2B2;
+}

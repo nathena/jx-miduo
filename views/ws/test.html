@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>est</title>
+    <script src="/js/socket.io-1.3.0.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+test
+<div id="msg" style="border:1px solid #000;width:100%;height:300px;overflow: scroll;">
+
+</div>
+<input type="text" id="room" value="test" />
+<input type="button" id="button" value="screen login">
+<input type="button" id="button1" value="player login">
+<script>
+$(function(){
+
+    function renderMsg(msg){
+        $("#msg").html($("#msg").html()+"<br/>"+msg);
+    }
+
+    var socket = io.connect();
+
+    $("#button").click(function(){
+        socket.emit("screen login",{name:"123"});
+    })
+
+    $("#button1").click(function(){
+        socket.emit("player login",{name:"123"});
+    })
+
+    socket.on("connecting",function(data){
+        renderMsg("..connecting");
+    });
+
+    socket.on("connect",function(data){
+        renderMsg("..connect");
+    });
+
+    socket.on("connect_failed",function(data){
+        renderMsg("..connect_failed");
+    });
+
+    socket.on("error",function(data){
+        renderMsg("..error");
+    });
+
+    socket.on("message",function(data){
+        renderMsg("..message");
+    });
+
+    socket.on("anything",function(data){
+        renderMsg("..anything");
+    });
+
+    socket.on("reconnect_failed",function(data){
+        renderMsg("..reconnect_failed");
+    });
+
+    socket.on("reconnect",function(data){
+        renderMsg("..reconnect");
+    });
+
+    socket.on("reconnecting",function(data){
+        renderMsg("..reconnecting");
+    });
+
+})
+</script>
+
+
+</body>
+</html>

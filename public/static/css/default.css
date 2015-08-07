@@ -1,0 +1,264 @@
+/**
+ * 聚喜-移动端
+ * 初始默认样式表
+ */
+@charset "utf-8";
+@import url("iconfont.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style-type: none;
+    -webkit-text-size-adjust: none;
+    zoom: 1;
+    resize: none;
+    font-family: "微软雅黑", arial, sans-serif;
+    
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+    vertical-align: baseline;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-weight: normal;
+    color: #333;
+    background-color: #FFF;
+}
+
+input,
+button {
+    background-color: #FFF;
+    border-radius: 0;
+}
+button, a {
+    cursor: pointer;
+    -webkit-transition: none .4s ease;
+       -moz-transition: none .4s ease;
+         -o-transition: none .4s ease;
+            transition: none .4s ease;
+    -webkit-transition-property: background-color,border-color,color;
+       -moz-transition-property: background-color,border-color,color;
+         -o-transition-property: background-color,border-color,color;
+            transition-property: background-color,border-color,color;
+}
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+img { -ms-interpolation-mode: bicubic; }
+a { text-decoration: none; }
+
+i {  /* 所有i标签均用于图标 */
+    display: inline-block;
+    text-align: center;
+    font-family: iconfont !important;
+    font-style: normal;
+}
+
+article,
+pre { /* 所有article标签均用于文档或长篇内容。理论上pre标签作为内部需要编译html编码的标签，但可视情况而定 */
+    white-space: pre-line;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px white inset; }    /* 让Chrome内核在自动填表的时候不显示黄底 */
+button::-moz-focus-inner { border-color: transparent !important; }    /* 去除火狐浏览器点击button时出现的边框虚线 */
+:active { outline: none; }
+:focus { outline: none; }
+::-moz-focus-inner { outline: none; }    /* 去除火狐浏览器下选中焦点时的虚线外框 */
+
+.notransition,
+.notransition *{
+    -webkit-transition: none !important;
+       -moz-transition: none !important;
+        -ms-transition: none !important;
+         -o-transition: none !important;
+            transition: none !important;
+}
+
+/* 超出元素的多余文字不换行，将多余部分替换成... */
+.overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 清除浮动 */
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clearbox {
+    clear: both;
+    overflow: hidden;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix { *zoom: 1;}
+
+/* 遮罩层 */
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 不可选中 */
+.noselect {
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.scrollup { /* 返回顶部按钮 */
+    display: none;
+    position: fixed;
+    z-index: 1111;
+    right: 1.5625%;
+    bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: #F1F1F1;
+    border: 2px solid #CCC;
+    font-family: iconfont !important;
+    font-size: 1.28rem;
+    color: #AAA;
+}
+
+/* 第三方注册&找回密码 头部Logo Start */
+.account-head {
+    position: relative;
+    width: 100%;
+    height: 79px;
+    border-bottom: 1px solid #DEDEDE;
+}
+.account-head * {
+    cursor: default;
+}
+.account-head > .logo {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+}
+.account-head > .logo > i:first-child {
+    margin-right: 6px;
+    vertical-align: top;
+    font-size: 50px;
+    color: #FF4B5A;
+}
+.account-head > .logo > i {
+    display: block;
+    float: left;
+    font-size: 30px;
+    color: #333;
+}
+/* 第三方注册&找回密码 头部Logo End */
+
+.btn-pink {
+    background-color: #FF4B5A;
+    color: #FFF;
+}
+.btn-pink:hover {
+    background-color: #E13A48;
+}
+.btn-pink-white {
+    background-color: #FF7B8A;
+    color: #FFF;
+}
+.btn-pink-white:hover {
+    background-color: #E1606E;
+}
+.btn-azure-white {
+    background-color: #81D3F7;
+    color: #FFF;
+}
+.btn-azure-white:hover {
+    background-color: #64B6DA;
+}
+.btn-white-pink {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    color: #FF4B5A;
+}
+.btn-white-pink:hover {
+    background-color: #00C2D1;
+    border-color: #00C2D1;
+    color: #FFF;
+}
+.btn-lightGreen-white {
+    background-color: #57B846;
+    color: #FFF;
+}
+.btn-lightGreen-white:hover {
+    background-color: #47A236;
+}
+.btn-white-gray {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    color: #666;
+}
+.btn-white-gray:hover {
+    background-color: #E13A48;
+    border-color: #E13A48;
+    color: #FFF;
+}
+
+.delay300-ease-in {
+    -webkit-transition: none .3s ease-in;
+       -moz-transition: none .3s ease-in;
+         -o-transition: none .3s ease-in;
+            transition: none .3s ease-in;
+}
+.delay300-ease {
+    -webkit-transition: none .3s ease;
+       -moz-transition: none .3s ease;
+         -o-transition: none .3s ease;
+            transition: none .3s ease;
+}
+.delay300-ease-out {
+    -webkit-transition: none .5s ease-out;
+       -moz-transition: none .5s ease-out;
+         -o-transition: none .5s ease-out;
+            transition: none .5s ease-out;
+}
+.delay1000-ease {
+    -webkit-transition: none 1s ease;
+       -moz-transition: none 1s ease;
+         -o-transition: none 1s ease;
+            transition: none 1s ease;
+}
+.delay500-linear {
+    -webkit-transition: none .5s linear;
+       -moz-transition: none .5s linear;
+         -o-transition: none .5s linear;
+            transition: none .5s linear;
+}

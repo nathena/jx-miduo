@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: iconfont;
+    src: url("../font/iconfont.eot");
+    src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"),
+         url("../font/iconfont.woff") format("woff"),
+         url("../font/iconfont.ttf") format("truetype"),
+         url("../font/iconfont.svg#iconfont") format("svg");
+}
+
+.icon-dbyerror:before { content: "\e600"; }
+
+.icon-dbylogo:before { content: "\e601"; }
+
+.icon-dbyright:before { content: "\e603"; }
+
+.icon-dbylogob:before { content: "\e604"; }
+
+.icon-dbylogod:before { content: "\e605"; }
+
+.icon-dbylogoy:before { content: "\e606"; }
+
+.icon-dbyqq:before { content: "\e602"; }
+
+.icon-dbyweibo:before { content: "\e607"; }
+
+.icon-iconblessing:before { content: "\e608"; }
+
+.icon-iconphotograph:before { content: "\e609"; }
+
+.icon-iconshake:before { content: "\e60a"; }

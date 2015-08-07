@@ -1,0 +1,10 @@
+[2015-01-27 15:21:08.671] [INFO] logInfo - /testWs/ >>  Not Found 
+[2015-01-27 15:21:08.674] [INFO] logInfo - 127.0.0.1 - - "GET /testWs/ HTTP/1.1" 304 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:35.0) Gecko/20100101 Firefox/35.0"
+[2015-01-27 15:26:17.938] [INFO] logInfo - /testWs/ >>  Not Found 
+[2015-01-27 15:26:17.940] [INFO] logInfo - 127.0.0.1 - - "GET /testWs/ HTTP/1.1" 304 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:35.0) Gecko/20100101 Firefox/35.0"
+[2015-01-27 15:26:27.764] [INFO] logInfo - /testWs/ >>  Not Found 
+[2015-01-27 15:26:27.766] [INFO] logInfo - 127.0.0.1 - - "GET /testWs/ HTTP/1.1" 304 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:35.0) Gecko/20100101 Firefox/35.0"
+[2015-01-27 15:26:31.165] [INFO] logInfo - /testWs/ >>  Not Found 
+[2015-01-27 15:26:31.171] [INFO] logInfo - 127.0.0.1 - - "GET /testWs/ HTTP/1.1" 304 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:35.0) Gecko/20100101 Firefox/35.0"
+[2015-01-27 15:26:35.934] [INFO] logInfo - /testWs/ >>  Not Found 
+[2015-01-27 15:26:35.938] [INFO] logInfo - 127.0.0.1 - - "GET /testWs/ HTTP/1.1" 304 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:35.0) Gecko/20100101 Firefox/35.0"
