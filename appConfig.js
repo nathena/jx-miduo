@@ -7,9 +7,9 @@ var path = require("path");
 exports = module.exports = {
 
     debug: true,
-    name: "婚礼场景系统",
-    giftname: "米多",
-    description: "mi duo",
+    name: "test",
+    giftname: "test",
+    description: "test",
     version: "0.1.0",
 
     site_static_host: "",
@@ -29,13 +29,13 @@ exports = module.exports = {
     },
 
     qqOauth :{
-        appid:"101188724",
-        appkey:"0cb22eeaf5344eed156e22b454401b75",
+        appid:"",
+        appkey:"",
         callback:""
     },
     weiboOauth:{
-        appid:"2949038831",
-        appkey:"b2aacde3a5243ed475166858ef30595b",
+        appid:"",
+        appkey:"",
         callback:""
     },
 
@@ -61,25 +61,19 @@ exports = module.exports = {
     db_default_max_conns: 50,
 
     db_mysqlConfig: {
-        "host": "192.168.2.139",
+        "host": "127.0.0.1",
         "user": "root",
         "password": "",
-        "database": "ejqdb"
+        "database": ""
     },
 
-    // db_mysqlConfig       : {
-    //     "host"      : "127.0.0.1",
-    //     "user"      : "root",
-    //     "password"  : "xyl@mysql",
-    //     "database"  : "ejqdb"
-    // },
 
     mail_opts           : {
-        host  : "smtp.163.com",
+        host  : "",
         port  : 25,
         auth  : {
-            user  : "wisasset@163.com",
-            pass  : "adminn"
+            user  : "",
+            pass  : ""
         }
     },
 
